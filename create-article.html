@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}
+სტატიის დამატება
+{% endblock %}
+
+{% block body %}
+<div class="container mt-5">
+    <h3 >სტატიის დამატება</h3>
+    <form method="post">
+       <input type="text" name="title" id="title" class="form-control" placeholder="სათაური"><br>
+       <textarea name="intro" id="intro" class="form-control" placeholder="აღწერა"></textarea><br>
+       <textarea name="text" id="text" class="form-control" placeholder="ტექსტი"></textarea><br>
+        <input type="submit" class="btn btn-success" value="გაგზავნა"></input>
+    </form>
+</div>
+
+ {% endblock %}

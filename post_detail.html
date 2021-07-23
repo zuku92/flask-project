@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{article.title}}
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <h3>{{article.title}}</h3>
+
+
+    <div class="alert alert-info">
+
+        <P>  {{article.text}} </P>                                                  <!-- gamogvaqvs postis sruli teqsti mivmartavs article obieqtshi text chanawers -->
+        <p><b> {{article.date.date()}} </b></p>                                     <!-- gamogvaqvs postis damatebis tarigi article obieqtshi date chanaweri -->
+        <a href="/posts/{{article.id}}/del" class="btn btn-danger">წაშლა</a>                 <!--vaketebt postis washlis linkis realizacias -->
+        <a href="/posts/{{article.id}}/update" class="btn btn-success">რედაქტირება</a>       <!--vaketebt postis redaqtirebis linkis realizacias -->
+    </div>
+
+</div>
+
+{% endblock %}
